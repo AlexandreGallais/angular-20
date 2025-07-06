@@ -10,6 +10,10 @@ export default [
     rules: { 'prettier/prettier': 'error' },
   },
   {
+    files: ['**/index.html'],
+    rules: { 'prettier/prettier': 'off' },
+  },
+  {
     ignores: ['**/dist'],
   },
   {
@@ -28,12 +32,6 @@ export default [
           ],
         },
       ],
-    },
-  },
-  {
-    files: ['**/index.html'],
-    rules: {
-      'prettier/prettier': 'off',
     },
   },
   {

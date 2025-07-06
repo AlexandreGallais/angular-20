@@ -7,7 +7,8 @@
     "t": "nx add @nx/storybook",
     "compodoc": "npx compodoc -p ./libs/shared/tsconfig.json -e json -d ./libs/shared",
     "tgz": "download-tgz package-lock package-lock.json",
-    "reset": "nx reset"
+    "reset": "nx reset",
+    "ww": " ng g web-worker --project=shared"
   },
   "private": true,
   "dependencies": {

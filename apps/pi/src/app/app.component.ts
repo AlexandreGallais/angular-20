@@ -1,6 +1,7 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import { NxWelcomeComponent } from './nx-welcome.component';
+import { ConfigService } from '@a20/shared';
 
 @Component({
   imports: [NxWelcomeComponent, RouterModule],
@@ -9,5 +10,6 @@ import { NxWelcomeComponent } from './nx-welcome.component';
   styleUrl: './app.component.scss',
 })
 export class AppComponent {
+  public t = inject(ConfigService);
   protected title = 'pi';
 }
